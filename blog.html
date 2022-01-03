@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/img/logo_1.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@351&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="blog">
+
+    <div id="main-nav-wrapper">
+        <nav id="main-nav" class="container">
+
+            <a id="main-logo" href="index.html">
+                <i class="fas fa-home fa-2x"></i>
+            </a>
+
+            <button id="mobilne-menu-button" onclick="toggle('main-menu')">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+
+            <ul id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <button onclick="toggle('dropdown-menu-1')">About Us <i class="fas fa-angle-down fa-1x"></i></button>
+                    <ul id="dropdown-menu-1">
+                        <li><a href="blog.html">Blog </a></li>
+                        <li><a href="#">Contact </a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#gall">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <main id="main-container" class="container">
+
+        <section id="main-section">
+
+            <section id="main-content">
+
+                <article>
+                    <a href="#">
+                        <img src="/img/slide.jpg" alt="Grupka ludzi w biurze"></a>
+                    <h2>Get ready to work as a team</h2>
+                    <p>Work that is the basic and higher form of work organization. It consists in entrusting a specific group of
+                        employees with activities or operations separated from work processes.</p>
+                
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="/img/slide2.jpg" alt="Grupka ludzi w biuerze">
+                    </a>
+                    <h2>Together, we are able to achieve anything!</h2>
+                    <p>Thanks to the pleasant atmosphere and good organization of work, we are able to quickly and effectively perform
+                        the
+                        tasks entrusted to us.</p>
+                
+                </article>
+
+            </section>
+
+            <aside id="main-sidebar">
+
+                <h2>Latest entries</h2>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            <img src="/img/slide5.jpg" alt="Opis obrazka">
+                            <h3>How to do your job efficiently?</h3>
+                        </a>
+                    
+                        <p>21 April 2022</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/img/slide4.jpg" alt="Opis obrazka">
+                            <h3>Investing in cryptocurrencies is it worth it?</h3>
+                        </a>
+                    
+                        <p>06 March 2022</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <img src="/img/slide3.jpg" alt="Opis obrazka">
+                            <h3>How to cooperate effectively?</h3>
+                        </a>
+                        <p>22 January 2021</p>
+                    
+                    </li>
+
+                </ul>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+
+            <section class="col" id="main-footer-about">
+                <h3 class="text-center">Our company is located here.</h3>
+                <p>Our company has been operating on the market since 2001. We invite everyone who wants to join our company.</p>
+            </section>
+
+            <section class="col" id="main-footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20584.636507148687!2d21.592896028724955!3d49.840962531324045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dad1830e3d2e7%3A0x361d405ee5589aba!2s38-130%20Frysztak!5e0!3m2!1spl!2spl!4v1641043319374!5m2!1spl!2spl"
+                    frameborder="0" allowfullscreen></iframe>
+            </section>
+
+        </div>
+    </footer>
+
+    <script>
+
+        function toggle(elementId) {
+            var element = document.getElementById(elementId);
+            if (getComputedStyle(element).display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@351&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="home">
+
+    <div id="main-nav-wrapper">
+        <nav id="main-nav" class="container">
+
+            <a id="main-logo" href="index.html">
+                <i class="fas fa-home fa-2x"></i>
+            </a>
+
+            <button id="mobilne-menu-button" onclick="toggle('main-menu')">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+
+            <ul id="main-menu">
+                <li><a href="index.html">Home</a></li>
+             
+                <li>
+                    <button onclick="toggle('dropdown-menu-1')">About Us <i class="fa fa-caret-down"></i></button>
+                    <ul id="dropdown-menu-1">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#gallery">Gallery</a></li>
+               
+            </ul>
+
+        </nav>
+    </div>
+
+    <header id="main-header">
+        <div class="container">
+            <h1>Hello everyone on our office page</h1>
+            <a href="" class="btn btn-rounded btn-border-white btn-md">Call To Action</a>
+        </div>
+    </header>
+
+    <main id="main-container" class="container">
+
+        <section id="features">
+
+            <div class="feature">
+                <span class="fa-stack fa-5x ">
+                    <i class="fab fa-twitch anim" style="color:#6441A4"></i>
+                </span>
+                <h3>Visit us on Twitch</h3>
+                <p>We invite you to our live broadcasts.</p>
+            </div>
+
+            <div class="feature">
+                <span class="fa-stack fa-5x ">
+                    <i class="fab fa-twitter anim" style="color:#1DA1F2"></i>
+                </span>
+                <h3>Visit us on Twitter</h3>
+                <p>You can also find us on our Twitter profile.</p>
+            </div>
+
+            <div class="feature">
+                <span class="fa-stack fa-5x">
+                    <i class="fab fa-youtube anim" style="color:red"></i>
+                </span>
+                <h3>Visit us on YouTube</h3>
+                <p>We invite you to our YT channel where new movies are released every day.</p>
+            </div>
+
+            <div class="feature">
+                <span class="fa-stack fa-5x">
+                    <i class="fab fa-facebook anim" style="color:#3b5998"></i>
+                </span>
+                <h3>Visit us on Facebook</h3>
+                <p>We also invite you to our Facebook profile, where information about new products is published.</p>
+            </div>
+
+        </section>
+
+        <h2 class="text-center">Amazing Skydive</h2>
+
+        <section id="video">
+
+            <div class="col">
+                <div class="embed-video">
+                    <iframe width="1280" height="720"
+                        src="https://www.youtube.com/embed/tQ7T530Q7aU" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <p>Every year we will continue with employees of employees organized by us who are interested in spas in the most beautiful
+                places in the world. Join us and experience it with us.</p>
+                <div class="text-center">
+                    <a href="" class="btn btn-rounded btn-black btn-black-hover">Jump Together</a>
+                </div>
+            </div>
+        <a id="gall"></a>
+        </section>
+        
+        <section id="gallery">
+            <figure>
+                <a href="https://picsum.photos/id/1000/1600/1000">
+                <img src="https://picsum.photos/id/1000/800/500" alt="Cross on the hill">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://picsum.photos/id/1018/1600/1000">
+                <img src="https://picsum.photos/id/1018/800/500" alt="The hill">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://picsum.photos/id/1020/1600/1000">
+                <img src="https://picsum.photos/id/1020/800/500" alt="The Bears">
+                </a>
+            </figure>
+            <figure>
+                <a href="https://picsum.photos/id/1016/1600/1000">
+                <img src="https://picsum.photos/id/1016/800/500" alt="Canyons">
+                </a>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+
+            <section class="col" id="main-footer-about">
+                <h3 class="text-center">Our company is located here.</h3>
+                <p>Our company has been operating on the market since 2001. We invite everyone who wants to join our company.</p>
+            </section>
+
+            <section class="col" id="main-footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20584.636507148687!2d21.592896028724955!3d49.840962531324045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dad1830e3d2e7%3A0x361d405ee5589aba!2s38-130%20Frysztak!5e0!3m2!1spl!2spl!4v1641043319374!5m2!1spl!2spl"
+                    frameborder="0" allowfullscreen></iframe>
+            </section>
+
+        </div>
+    </footer>
+
+    <script>
+
+        function toggle(elementId) {
+            var element = document.getElementById(elementId);
+            if (getComputedStyle(element).display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
